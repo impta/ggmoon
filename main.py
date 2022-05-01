@@ -26,11 +26,11 @@ Made by @ElenLiL"""
 
 JOIN_BUTTON = [
     InlineKeyboardButton(
-        text='پورتالمون',
+        text='⚙ Join Updates Channel ⚙',
         url='https://telegram.me/ElenLiLBoT'
     )
         InlineKeyboardButton(
-        text='سازنده',
+        text='⚙ Developer ⚙',
         url='https://telegram.me/ElenLiL'
     )
 ]
