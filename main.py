@@ -1,4 +1,4 @@
-# Author: TRTECHGUIDE (https://github.com/impta) (@impta)
+# Author: TRTECHGUIDE (https://github.com/TR-TECH-GUIDE) (@SLBotsOfficial)
 
 import os
 import requests
@@ -17,16 +17,16 @@ Bot = Client(
 )
 
 
-START_TEXT = """چطوری؟ {}
-من ربات گوگلم
+START_TEXT = """Hello {}
+I am a google search bot.
 
-> `میتونی از طریق اینلاین، مستقیم تو خود تلگرام از گوگل سرچ کنی`
+> `I can search from google. Use me in inline.`
 
 Made by @ElenLiL"""
 
 JOIN_BUTTON = [
     InlineKeyboardButton(
-        text='⚙ Join Updates Channel ⚙',
+        text='پورتالمون',
         url='https://telegram.me/ElenLiLBoT'
     )
         InlineKeyboardButton(
@@ -77,7 +77,7 @@ def google(query):
     for info in informations:
         text = f"**Title:** `{info['title']}`"
         text += f"\n**Description:** `{info['description']}`"
-        text += f"\n\nMade by @SLBotsOfficial"
+        text += f"\n\nMade by @ElenLiL"
         results.append(
             {
                 "title": info['title'],
