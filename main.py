@@ -57,7 +57,7 @@ async def inline(bot, update):
                 ),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton(text="ورود ب سایت", url=result["link"])],
+                        [InlineKeyboardButton(text="Link", url=result["link"])],
                         JOIN_BUTTON
                     ]
                 )
