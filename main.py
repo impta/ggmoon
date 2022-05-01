@@ -17,10 +17,10 @@ Bot = Client(
 )
 
 
-START_TEXT = """Hello {}
-I am a google search bot.
+START_TEXT = """چطوری؟ {}
+من ربات گوگلم
 
-> `I can search from google. Use me in inline.`
+> `میتونم هرچیزیو از طریق اینلاین توی تلگرام اما تز طریق گوگل سرچ کنم`
 
 Made by @ElenLiL"""
 
@@ -57,7 +57,7 @@ async def inline(bot, update):
                 ),
                 reply_markup=InlineKeyboardMarkup(
                     [
-                        [InlineKeyboardButton(text="Link", url=result["link"])],
+                        [InlineKeyboardButton(text="ورود ب سایت", url=result["link"])],
                         JOIN_BUTTON
                     ]
                 )
@@ -71,8 +71,8 @@ def google(query):
     informations = r.json()["results"]
     results = []
     for info in informations:
-        text = f"**Title:** `{info['title']}`"
-        text += f"\n**Description:** `{info['description']}`"
+        text = f"**عنوان:** `{info['title']}`"
+        text += f"\n**توضیحات:** `{info['description']}`"
         text += f"\n\nMade by @ElenLiL"
         results.append(
             {
