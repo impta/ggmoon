@@ -29,10 +29,6 @@ JOIN_BUTTON = [
         text='پورتالمون',
         url='https://telegram.me/ElenLiLBoT'
     )
-        InlineKeyboardButton(
-        text='⚙ Developer ⚙',
-        url='https://telegram.me/ElenLiL'
-    )
 ]
 
 
